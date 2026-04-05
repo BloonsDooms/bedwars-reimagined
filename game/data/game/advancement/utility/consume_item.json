@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "consume_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {},
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "run_command": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "consume_item"
+    ]
+  ],
+  "rewards": {
+    "function": "game:utility/consume_item"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:white_wool",
+    "minecraft:oak_planks",
+    "minecraft:end_stone"
+  ]
+}
