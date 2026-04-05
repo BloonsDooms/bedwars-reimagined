@@ -1,0 +1,1 @@
+execute unless score @s player.id matches ..0 unless score @s player.id matches 0.. store result score @s player.id run scoreboard players add .id player.id 1
