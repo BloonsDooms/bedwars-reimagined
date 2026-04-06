@@ -1,0 +1,1 @@
+give @s minecraft:amethyst_shard[weapon={item_damage_per_attack:3,disable_blocking_for_seconds:0},blocks_attacks={block_delay_seconds:0},item_model="minecraft:wooden_sword",consumable={consume_seconds:3,has_consume_particles:false,animation:"block"}]

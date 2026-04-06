@@ -1,0 +1,40 @@
+{
+  "function": "minecraft:sequence",
+  "functions": [
+    {
+      "function": "set_count",
+      "count": 1
+    },
+    {
+      "function": "minecraft:set_item",
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:can_break": {
+          "blocks": "#game:player_blocks"
+        },
+        "minecraft:item_model": "minecraft:wooden_sword",
+        "minecraft:item_name": {"text":"Wooden Sword"},
+        "minecraft:consumable": {
+          "consume_seconds": 0.5,
+          "animation": "eat",
+          "has_consume_particles": true,
+          "on_consume_effects": []
+        },
+        "minecraft:use_remainder": {
+          "id": "minecraft:prismarine_shard",
+          "components": {
+            "minecraft:custom_data": {
+              "run_command": true,
+              "command": "function game:player/tool/tool_swap"
+            },
+            "minecraft:item_model": "minecraft:wooden_axe",
+            "minecraft:item_name": {"text":"Wooden Axe"}
+          }
+        }
+      }
+    }
+  ]
+}
